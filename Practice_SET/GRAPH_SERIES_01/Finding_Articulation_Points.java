@@ -1,9 +1,6 @@
 package Practice_SET.GRAPH_SERIES_01;
 
-import java.util.LinkedList;
-import java.util.Scanner;
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.*;
 
 public class Finding_Articulation_Points {
     public static void main(String[] args) {
@@ -28,7 +25,6 @@ public class Finding_Articulation_Points {
         for(int ee:set){
             System.out.print(ee+" ");
         }
-
 
     }// MAIN ENDS................................................................................................................
 

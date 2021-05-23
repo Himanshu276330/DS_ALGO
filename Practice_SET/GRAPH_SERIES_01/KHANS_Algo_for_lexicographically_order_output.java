@@ -2,8 +2,9 @@ package Practice_SET.GRAPH_SERIES_01;
 
 import java.util.*;
 
-public class KHANS_Algorithm_for_Topological_Sort {
+public class KHANS_Algo_for_lexicographically_order_output {
     public static void main(String[] args) {
+        //Not complete yet..  Try code in future ????????????????
 
         Scanner sc=new Scanner(System.in);
         int no_of_node=sc.nextInt();
@@ -26,22 +27,23 @@ public class KHANS_Algorithm_for_Topological_Sort {
 
     static ArrayList<Integer> res=new ArrayList<>();
     static void khan(int no_of_node){
-        Stack<Integer> q=new Stack<>();
+        //Stack<Integer> q=new Stack<>();
+        Deque<Integer> q=new LinkedList<>();
         for(int i=1;i<=no_of_node;i++){
-            if(inDegree[i]==0) q.add(i);
+            if(inDegree[i]==0) q.addLast(i);
         }
         while(!q.isEmpty()){
-            int cur=q.remove();
-            for(int child:adj[cur]){
-                inDegree[child]--;
-                if (inDegree[child] == 0) q.add(child);
-            }
+            int cur=q.removeFirst();
             res.add(cur);
+            for(int child:adj[cur]) {
+                inDegree[child]--;
+                if (inDegree[child] == 0) q.addLast(child);
+            }
         }
     }
 
     static int [] inDegree=new int[10001];
-    static LinkedList<Integer> []adj;
+    static LinkedList<Integer>[]adj;
     static void Implementation(int v){
 
         adj=new LinkedList[v+1];
@@ -54,4 +56,3 @@ public class KHANS_Algorithm_for_Topological_Sort {
         inDegree[d]++;   //To maintain its degree.
     }
 }
-

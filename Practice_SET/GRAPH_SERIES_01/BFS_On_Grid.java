@@ -3,7 +3,7 @@ package Practice_SET.GRAPH_SERIES_01;
 import java.util.Deque;
 import java.util.LinkedList;
 
-public class Apply_BFS_On_Grid {
+public class BFS_On_Grid {
     public static void main(String[] args) {
 
         int [][]a=new int[][]{ {0,0,1,0,1,1},
@@ -91,13 +91,4 @@ public class Apply_BFS_On_Grid {
         return (i>=0 && i<row && j>=0 && j<col && !vis[i][j]);
     }
 
-}
-class Pair{
-    int first;
-    int second;
-    private Pair(){}
-    Pair(int first,int second){
-        this.first=first;
-        this.second=second;
-    }
 }

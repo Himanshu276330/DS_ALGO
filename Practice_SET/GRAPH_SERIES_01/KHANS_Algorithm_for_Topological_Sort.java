@@ -31,12 +31,12 @@ public class KHANS_Algorithm_for_Topological_Sort {
             if(inDegree[i]==0) q.add(i);
         }
         while(!q.isEmpty()){
-            int cur=q.remove();
-            for(int child:adj[cur]){
+            int cur=q.pop();
+            res.add(cur);
+            for(int child:adj[cur]) {
                 inDegree[child]--;
                 if (inDegree[child] == 0) q.add(child);
             }
-            res.add(cur);
         }
     }
 

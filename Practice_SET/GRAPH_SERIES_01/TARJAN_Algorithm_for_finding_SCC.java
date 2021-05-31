@@ -58,7 +58,6 @@ public class TARJAN_Algorithm_for_finding_SCC {
             System.out.println();
             i++;
         }
-
     }
     static int i=1;
 

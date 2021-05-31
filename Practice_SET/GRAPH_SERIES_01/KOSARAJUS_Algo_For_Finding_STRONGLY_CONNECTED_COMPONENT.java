@@ -5,6 +5,7 @@ import java.util.*;
 public class KOSARAJUS_Algo_For_Finding_STRONGLY_CONNECTED_COMPONENT {
     public static void main(String[] args) {
 
+        //In this algorithm we run two dfs first on simple graph and second on transpose graph.
         Scanner sc=new Scanner(System.in);
         int t=sc.nextInt();
         while(t-->0){

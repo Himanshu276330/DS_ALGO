@@ -8,8 +8,8 @@ public class L_19_STRING {
            //String is nonPrimitive data type
            //String is immutable
 
-        String name = "Himanshu Shekhar";                    //It is present in String pool area
-        String name2=new String("Himanshu Shekhar");   //It is present in heap area
+//        String name = "Himanshu Shekhar";                    //It is present in String pool area
+//        String name2=new String("Himanshu Shekhar");   //It is present in heap area
 //        String name3=" ";
 //        System.out.println(name);
 //        System.out.println(name2);
@@ -28,7 +28,7 @@ public class L_19_STRING {
 //        System.out.println(name.length());  //Space also included in length
 //
 //        System.out.println(name.substring(4));
-        System.out.println(name.substring(4,15));        //15 wala index ka char include nahi hota h -- [4,15)
+//        System.out.println(name.substring(4,15));        //15 wala index ka char include nahi hota h -- [4,15)
 //
 //        System.out.println(name.contains("imansh"));
 //        System.out.println(name.contains("i"));
@@ -61,6 +61,14 @@ public class L_19_STRING {
 //
 //        String name5="  himanshu  ";
 //        System.out.println(name5.trim());           //Spaces hata deta h
+
+        String s="        Himanshu     shekhar   visha       ";
+        String s2=s.trim();
+        String [] ss=s2.split("(\\s)+");
+//        String [] ss=s.split(" ");
+        for(String ee:ss){
+            System.out.print(ee+" ");
+        }
 
     }
 }

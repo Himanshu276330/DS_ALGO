@@ -1,8 +1,12 @@
 package Practice_SET.GRAPH_SERIES_01;
+
 import java.util.*;
 
-public class Finding_Bridges_in_Graph {
+public class Articulation_Points {
     public static void main(String[] args) {
+
+        // An articulation points (or cut vertex) is a vertex which when removed makes graph disconnected or more
+        // precisely it increases the no of connected components(cc).
 
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter no of vertices and edges : ");
@@ -18,32 +22,39 @@ public class Finding_Bridges_in_Graph {
         }
 
         dfs(1,-1);
+        for(int ee:set){
+            System.out.print(ee+" ");
+        }
 
+    }// MAIN ENDS................................................................................................................
 
-
-    }//MAIN ENDS...............................................................................................
-
+    static Set<Integer> set=new TreeSet<>();
     static int [] in=new int[1001];
     static int [] low=new int[1001];
     static int timer;                             //Global variable initialise as 0.
     static void dfs(int node,int parent){
         vis[node]=true;
         in[node]=low[node]=timer++;
-
+        int subtree=0;
         for(int child:adj[node]){
             if(child==parent) continue;
             if(vis[child]){
                 low[node]=Math.min(low[node],in[child]);
             }else{
                 dfs(child,node);
-                if(low[child]>in[node]){
-                    System.out.println(node +" -> "+child+" is a bridge");
+                if(in[node]<=low[child] && parent!=-1){
+                    set.add(node);
                 }
                 low[node]=Math.min(low[child],low[node]);
+                subtree++;
             }
+        }
+        if(subtree>1 && parent==-1){
+            set.add(node);
         }
 
     }
+
     static boolean [] vis=new boolean[1001];
 
     static  LinkedList<Integer>[] adj;

@@ -1,7 +1,5 @@
 package apniKaksha;
 
-import java.util.Locale;
-
 public class L_19_STRING {
     public static void main(String[] args) {
 

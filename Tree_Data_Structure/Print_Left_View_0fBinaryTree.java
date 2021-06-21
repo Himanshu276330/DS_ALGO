@@ -15,4 +15,23 @@ public class Print_Left_View_0fBinaryTree {
         printLeft(root.left,level+1);
         printLeft(root.right,level+1);
     }
+
+    //Method 02.
+    static void printLeft2(Node root){
+        Deque<Node> deque=new ArrayDeque<>();
+        deque.addLast(root);
+        while (!deque.isEmpty()){
+            int size=deque.size();
+            for(int i=0;i<size;i++){
+                Node cur=deque.removeFirst();
+                if(i==0){
+                    System.out.print(cur.data+" ");
+                }
+                if(cur.left!=null) deque.addLast(cur.left);
+                if(cur.right!=null) deque.addLast(cur.right);
+            }
+        }
+    }
+
+
 }

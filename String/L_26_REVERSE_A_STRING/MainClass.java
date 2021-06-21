@@ -1,4 +1,4 @@
-package L_26_REVERSE_A_STRING;
+package String.L_26_REVERSE_A_STRING;
 
 public class MainClass {
     public static void main(String[] args) {

@@ -10,7 +10,7 @@ public class CWH_107_METHOD_TAG_FOR_JAVA_DOCS {
      */
     public static void main(String[] args) {
 
-        System.out.println("I am main method");
+        System.out.println("I am Main method");
     }
 
     /**

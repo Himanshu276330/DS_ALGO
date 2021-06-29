@@ -13,7 +13,7 @@ public class L_27_Static_keyword{
     }
     public static void main(String[] args) {
 
-        System.out.println("In main");
+        System.out.println("In Main");
 
         A objA=new A();
         B objB= objA.new B();

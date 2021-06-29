@@ -12,13 +12,13 @@ public class AAA_Implementation_of_Binary_Tree {
         System.out.println("Enter data of root  , if no data then give -ve no : ");
         Node root=Implementation(sc.nextInt());
 
-        System.out.println("Printing in preOrder transversal : ");
-        preOrder(root);
-        System.out.println();
-
-//        System.out.println("Printing in postOrder transversal : ");
-//        postOrder(root);
+//        System.out.println("Printing in preOrder transversal : ");
+//        preOrder(root);
 //        System.out.println();
+
+        System.out.println("Printing in postOrder transversal : ");
+        postOrder(root);
+        System.out.println();
 
 //        System.out.println("Printing in inOrder transversal : ");
 //        inOrder(root);
@@ -106,22 +106,31 @@ public class AAA_Implementation_of_Binary_Tree {
 
 
         //Serialize and DeSerialize..
-        Serialize_and_DeSerialize sd=new Serialize_and_DeSerialize();
-        sd.arr.clear();
-        sd.serialize(root);
-        sd.arr.clear();
-        sd.serialize(root);
-        ArrayList<Integer> temp=sd.arr;
-        for(int e:temp) System.out.print(e+" ");
-        System.out.println();
-        Node demo= sd.deSerialize(temp);
-        preOrder(demo);
+//        Serialize_and_DeSerialize sd=new Serialize_and_DeSerialize();
+//        sd.arr.clear();
+//        sd.serialize(root);
+//        sd.arr.clear();
+//        sd.serialize(root);
+//        ArrayList<Integer> temp=sd.arr;
+//        for(int e:temp) System.out.print(e+" ");
+//        System.out.println();
+//        Node demo= sd.deSerialize(temp);
+//        preOrder(demo);
 
+        //Iterative InOrder traversal.
+//        Iterative_InOrder_Traversal it=new Iterative_InOrder_Traversal();
+//        it.traversal(root);
+//        System.out.println();
+//        Iterative_preOrder_Traversal it2=new Iterative_preOrder_Traversal();
+//        it2.traversal(root);
+
+        Iterative_postOrder_Traversal itp=new Iterative_postOrder_Traversal();
+        itp.postOrder(root);
 
 
 //        10 20 40 -8 -8 50 70 -8 -8 80 -8 -8 30 -8 60 -8 -8   -->sample binary tree1
-//                                10
-//                              /    \
+//                                 10
+//                               /    \
 //                             20     30
 //                            /   \     \
 //                          40    50     60

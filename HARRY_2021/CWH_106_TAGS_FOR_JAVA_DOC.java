@@ -14,7 +14,7 @@ public class CWH_106_TAGS_FOR_JAVA_DOC {
         System.out.println("The sum is: "+(a+b));
     }
     public static void main(String[] args) {
-        System.out.println("This is my main method");
+        System.out.println("This is my Main method");
 
     }
 }

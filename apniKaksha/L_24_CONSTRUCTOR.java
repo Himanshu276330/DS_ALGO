@@ -24,7 +24,7 @@ class vehicle{
 }
 
 public class L_24_CONSTRUCTOR {
-    L_24_CONSTRUCTOR(){      //Constructor of main public class
+    L_24_CONSTRUCTOR(){      //Constructor of Main public class
         System.out.println("Object is now created");
     }
     public static void main(String[] args) {

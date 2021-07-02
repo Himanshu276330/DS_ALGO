@@ -64,27 +64,27 @@ public class Implementation_of_BST {
 //        System.out.println();
 
 
-        Ceil_in_BST ceil=new Ceil_in_BST();
-        Node temp=ceil.ceil(root,60);
-        Node temp2=ceil.ceil(root,80);
-        Node temp3=ceil.ceil(root,55);
-        Node temp4=ceil.ceil(root,2);
-        Node temp5=ceil.ceil(root,110);
-        System.out.println(temp.data);
-        System.out.println(temp2.data);
-        System.out.println(temp3.data);
-        System.out.println(temp4.data);
-        if(temp5==null)
-            System.out.println("ceil is not present!");
-        else {
-            System.out.println(temp4.data);
-        }
-        inOrder(temp);
-        System.out.println();
-        inOrder(temp2);
-        System.out.println();
-        inOrder(temp3);
-        System.out.println();
+//        Ceil_in_BST ceil=new Ceil_in_BST();
+//        Node temp=ceil.ceil(root,60);
+//        Node temp2=ceil.ceil(root,80);
+//        Node temp3=ceil.ceil(root,55);
+//        Node temp4=ceil.ceil(root,2);
+//        Node temp5=ceil.ceil(root,110);
+//        System.out.println(temp.data);
+//        System.out.println(temp2.data);
+//        System.out.println(temp3.data);
+//        System.out.println(temp4.data);
+//        if(temp5==null)
+//            System.out.println("ceil is not present!");
+//        else {
+//            System.out.println(temp4.data);
+//        }
+//        inOrder(temp);
+//        System.out.println();
+//        inOrder(temp2);
+//        System.out.println();
+//        inOrder(temp3);
+//        System.out.println();
 
 
 

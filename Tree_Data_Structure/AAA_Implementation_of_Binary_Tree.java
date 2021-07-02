@@ -16,9 +16,9 @@ public class AAA_Implementation_of_Binary_Tree {
 //        preOrder(root);
 //        System.out.println();
 
-        System.out.println("Printing in postOrder transversal : ");
-        postOrder(root);
-        System.out.println();
+//        System.out.println("Printing in postOrder transversal : ");
+//        postOrder(root);
+//        System.out.println();
 
 //        System.out.println("Printing in inOrder transversal : ");
 //        inOrder(root);
@@ -124,8 +124,8 @@ public class AAA_Implementation_of_Binary_Tree {
 //        Iterative_preOrder_Traversal it2=new Iterative_preOrder_Traversal();
 //        it2.traversal(root);
 
-        Iterative_postOrder_Traversal itp=new Iterative_postOrder_Traversal();
-        itp.postOrder(root);
+//        Iterative_postOrder_Traversal itp=new Iterative_postOrder_Traversal();
+//        itp.postOrder(root);
 
 
 //        10 20 40 -8 -8 50 70 -8 -8 80 -8 -8 30 -8 60 -8 -8   -->sample binary tree1
@@ -160,6 +160,12 @@ public class AAA_Implementation_of_Binary_Tree {
 //                          40    50     60
 //                         /     /  \      \
 //                       60     70   80     70
+
+
+        ArrayList<Integer> ans=recoverTree(root);
+        System.out.println(ans.get(0)+" "+ans.get(1));
+
+
 
 
     }//Main Ends.......................................................................................
@@ -212,5 +218,31 @@ public class AAA_Implementation_of_Binary_Tree {
             System.out.print(root.data+" ");
         print(root.left,k-1);
         print(root.right,k-1);
+    }
+
+     static ArrayList<Integer> recoverTree(Node A){
+        s=-1;e=-1;
+        solve(A);
+        ArrayList<Integer> ans=new ArrayList<>();
+        ans.add(e);
+        ans.add(s);
+        return ans;
+    }
+    static int s,e;
+    static void solve(Node root){
+        if(root!=null) {
+            solve(root.left);
+            if (root.left != null && root.data < root.left.data) {
+                if (s == -1) s = root.left.data;
+                e = root.data;
+                System.out.println(s + " s-e " + e);
+            }
+            if (root.right != null && root.data > root.right.data) {
+                if (s == -1) s = root.data;
+                e = root.right.data;
+                System.out.println(s + " s-e " + e);
+            }
+            solve(root.right);
+        }
     }
 }

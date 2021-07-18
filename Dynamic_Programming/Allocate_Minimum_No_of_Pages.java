@@ -77,7 +77,6 @@ public class Allocate_Minimum_No_of_Pages {
         }
         return dp[k][n-1];
     }
-
     static int sum(int[] arr,int i,int j){
         int res=0;
         for(int s=i;s<=j;s++) res+=arr[s];

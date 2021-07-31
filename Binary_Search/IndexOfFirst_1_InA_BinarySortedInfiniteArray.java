@@ -7,7 +7,7 @@ public class IndexOfFirst_1_InA_BinarySortedInfiniteArray {
 
         System.out.println(position(arr));
 
-    }//Main Ends..........................................................
+    }//Main Ends...................................................................................
 
     static int position(int[] arr){
         int low=0,high=1;

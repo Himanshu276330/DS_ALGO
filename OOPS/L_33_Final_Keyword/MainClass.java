@@ -17,11 +17,11 @@ public class MainClass extends Student{
 
     public static void main(String[] args) {
 
-//        String name="Anuj";
+//        DATA_STRUCTURE.String name="Anuj";
 //        name="Kumar";
 //        System.out.println(name);
 
-//        final String name2="Anuj";
+//        final DATA_STRUCTURE.String name2="Anuj";
 //        name2="Kumar";          //Give error
 
           //But in case of local variable we not need to initialise at that point  ,it not give error

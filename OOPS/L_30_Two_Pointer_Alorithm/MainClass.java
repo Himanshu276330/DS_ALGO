@@ -25,7 +25,7 @@ public class MainClass {
 
               //twoSum Algorithm by two pointer algorithm
 //        int [] arr2={2,4,-1,1,3,-4,0,-3,5,6,4,7};
-//        Arrays.sort(arr2);        //For shorting ,best method
+//        DATA_STRUCTURE.Arrays.sort(arr2);        //For shorting ,best method
 //        int n2= arr2.length;
 //        int x2=8;
 //        int i=0 , j=n2-1;

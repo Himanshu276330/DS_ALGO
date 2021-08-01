@@ -5,7 +5,7 @@ class Library01{
     }
     public void issuedBook(String ...arr){
     }
-    //public String  showAvailableBook(String ...arr){
+    //public DATA_STRUCTURE.String  showAvailableBook(DATA_STRUCTURE.String ...arr){
         //return showAvailableBook();
     //}
     public void addBook(String ...arr){

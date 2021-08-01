@@ -61,7 +61,7 @@ public class MainClass {
 //    }
 
 
-        //Question 02  { Unique String print }
+        //Question 02  { Unique DATA_STRUCTURE.String print }
     static Set<String> set=new HashSet<>();
     static int count=0;
     static void permutation(String s, int l, int r){

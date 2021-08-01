@@ -24,7 +24,7 @@ public class CWH_13_STRING_CH_03 {
 
         Scanner sc = new Scanner(System.in);
 
-//        String st = sc.next();
+//        DATA_STRUCTURE.String st = sc.next();
 //        System.out.println(st);
 
         String st2 = sc.nextLine();

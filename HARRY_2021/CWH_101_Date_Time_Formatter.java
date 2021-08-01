@@ -23,7 +23,7 @@ public class CWH_101_Date_Time_Formatter {
         String myDate=dt.format(df);
         String myDate2=dt.format(df2);
         String myDate3=dt.format(df3);
-        //String myDate4=dt.format(df4);
+        //DATA_STRUCTURE.String myDate4=dt.format(df4);
 
         System.out.println(myDate);
         System.out.println(myDate2);

@@ -7,12 +7,12 @@ public class Implimentation_Of_Graph_AND_bfs_and_dfs {
                //Implimentation of graph.
 
                //// if node no start with 0.
-//    static  LinkedList<Integer> [] adj;
+//    static  DATA_STRUCTURE.LinkedList<Integer> [] adj;
 //    public Implimentation_Of_Graph_AND_bfs_and_dfs(int v){
 //
-//        adj=new LinkedList[v];
+//        adj=new DATA_STRUCTURE.LinkedList[v];
 //        for (int i=0;i<v;i++){
-//            adj[i]= new LinkedList<>();
+//            adj[i]= new DATA_STRUCTURE.LinkedList<>();
 //        }
 //    }
 

@@ -3,7 +3,7 @@ package HARRY_2021;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-class MyGeneric<T1,T2>{  //T1 and T2 is like parameter i.e-Integer,String
+class MyGeneric<T1,T2>{  //T1 and T2 is like parameter i.e-Integer,DATA_STRUCTURE.String
     int val;
     private T1 t1;
     private T2 t2;

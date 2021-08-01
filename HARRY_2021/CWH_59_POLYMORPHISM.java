@@ -51,7 +51,7 @@ public class CWH_59_POLYMORPHISM {
     public static void main(String[] args) {
 
         Camera2 cam=new mySmartPhone2();
-        //cam.String[] availableNetwork();   --->not allowed,you only used camera
+        //cam.DATA_STRUCTURE.String[] availableNetwork();   --->not allowed,you only used camera
         cam.recording4kVideo();   //-->allowed
 
         mySmartPhone2 ms=new mySmartPhone2();

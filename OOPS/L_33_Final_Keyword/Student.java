@@ -6,7 +6,7 @@ public  class Student {
 
 
 //    final int ROLL_NO;
-//    final String NAME;
+//    final DATA_STRUCTURE.String NAME;
 //
 //     //this is called normal initializing block
 //    {

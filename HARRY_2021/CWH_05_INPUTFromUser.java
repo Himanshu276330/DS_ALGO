@@ -13,11 +13,11 @@ public class CWH_05_INPUTFromUser {
 //        boolean b1 = sc.hasNextInt();
 //        System.out.println(b1);
 
-//        String str = sc.next();
+//        DATA_STRUCTURE.String str = sc.next();
 //        System.out.println(str);
 
 //        System.out.println("2 nd line");
-//        String str2 = sc.nextLine();
+//        DATA_STRUCTURE.String str2 = sc.nextLine();
 //        System.out.println(str2);
 
 

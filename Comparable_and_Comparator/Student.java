@@ -53,8 +53,8 @@ public class Student implements Comparable<Student>{
 //        if (this.marks>o.marks) return 1;
 //        else if (this.marks<o.marks) return  -1;
 //
-//              //String class is already implement comparable class ,so we use it if marks is same ,
-//              //String order to compare is alphabetically order
+//              //DATA_STRUCTURE.String class is already implement comparable class ,so we use it if marks is same ,
+//              //DATA_STRUCTURE.String order to compare is alphabetically order
 //        return this.name.compareTo(o.name) ;
 //    }
 
@@ -63,8 +63,8 @@ public class Student implements Comparable<Student>{
     public int compareTo(Student o) {
       int r=this.marks-o.marks;
         if (r==0){
-            //String class is already implement comparable class ,so we use it if marks is same ,
-            //String order to compare is alphabetically order
+            //DATA_STRUCTURE.String class is already implement comparable class ,so we use it if marks is same ,
+            //DATA_STRUCTURE.String order to compare is alphabetically order
             return this.name.compareTo(o.name) ;
         }else  return r;
     }

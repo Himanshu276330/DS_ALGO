@@ -1,6 +1,6 @@
-package DATA_STRUCTURE.String.L_26_REVERSE_A_STRING;
+package DATA_STRUCTURE.String;
 
-public class MainClass {
+public class Reverse_aString {
     public static void main(String[] args) {
 
         String s="  The sky is blue";

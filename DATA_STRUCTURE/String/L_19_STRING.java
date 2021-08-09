@@ -6,15 +6,15 @@ public class L_19_STRING {
 //           String is nonPrimitive data type
 //           String is immutable
 
-        String name = "Himanshu Shekhar";      //It is present in String pool area
-        String name2=new String("Himanshu Shekhar");   //It is present in heap area
+        String name = "Himanshu Shekhar";      //It is present in String pool area.
+        String name2=new String("Himanshu Shekhar");   //It is present in heap area.
         String name3=" ";
         System.out.println(name);
         System.out.println(name2);
 
             //Both are not  same
         System.out.println(name.equals(name2));   //It compared only words/value
-        System.out.println(name==name2);           //It compared only words and where it present also
+        System.out.println(name==name2);          //It compared words and where it presents also
 
         //String Function
         System.out.println(name.charAt(0));

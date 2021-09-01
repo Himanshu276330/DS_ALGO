@@ -15,6 +15,10 @@ public class EGG_Dropping_Puzzle {
 
         System.out.println(solve_Tab(floor,1));
 
+        System.out.println(solve_Tab(floor,5));
+
+        System.out.println(solve_Tab_binary(floor,5));
+
     }//Main Ends............................................
 
     //Plain Recursion.......................................
@@ -83,6 +87,36 @@ public class EGG_Dropping_Puzzle {
             }
         }
         return dp[floor][egg];
+    }
+
+    //Dp(Tabulation).... By Binary Search.........................................
+    static int solve_Tab_binary(int floor,int egg){ //A=egg , b =floor
+        int [][]dp=new int[egg+1][floor+1];
+        for(int i=1;i<=floor;i++)
+            dp[1][i]=i;
+
+        for(int i=1;i<=egg;i++)
+        {
+            dp[i][1]=1;
+        }
+        //int low=0,high=0;
+        for(int i=2;i<=egg;i++)
+        {
+            for(int j=2;j<=floor;j++)
+            {
+                int low = 1;
+                int high = j;
+                while(low<=high){
+                    int mid = (low+high)/2;
+                    if(dp[i-1][mid-1]<dp[i][j-mid]) low = mid+1;
+                    else high = mid-1;
+                }
+                int option1 = Math.max(dp[i-1][low-1],dp[i][j-low]);
+                int option2 = Math.max(dp[i-1][high-1],dp[i][j-high]);
+                dp[i][j] = 1 + Math.min(option1,option2);
+            }
+        }
+        return dp[egg][floor];
     }
 
 
